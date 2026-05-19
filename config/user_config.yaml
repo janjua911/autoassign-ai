@@ -1,0 +1,52 @@
+# ============================================================
+#  AutoAssign AI — User Configuration
+#  Fill ALL fields marked <YOUR_...> before running
+# ============================================================
+user:
+  name: "<YOUR_NAME>"
+  email: "<YOUR_EMAIL>"
+  phone: "<YOUR_PHONE>"
+  account_type: "student"
+
+microsoft:
+  email: "<YOUR_MS_EMAIL>"
+  password: "<YOUR_MS_PASSWORD>"
+  tenant_id: ""
+  client_id: ""
+  use_playwright_fallback: true
+
+groq:
+  api_key: "<YOUR_GROQ_API_KEY>"
+  primary_model: "llama-3.3-70b-versatile"
+  coding_model: "deepseek-r1-distill-llama-70b"
+  vision_model: "llava-v1.5-7b"
+  max_tokens: 8192
+  temperature: 0.1
+
+whatsapp:
+  provider: "callmebot"
+  your_phone: "<YOUR_PHONE>"
+  callmebot_apikey: "<YOUR_CALLMEBOT_KEY>"
+  meta_token: ""
+  meta_phone_id: ""
+
+google_drive:
+  service_account_json: "config/service_account.json"
+  folder_name: "AutoAssign_Submissions"
+  enabled: true
+
+approval:
+  require_approval: true
+  timeout_minutes: 30
+  auto_submit_on_timeout: true
+
+schedule:
+  check_interval_minutes: 5
+  active_hours_start: "08:00"
+  active_hours_end: "02:00"
+  timezone: "Asia/Karachi"
+
+logging:
+  level: "INFO"
+  log_to_file: true
+  log_file: "logs/autoassign.log"

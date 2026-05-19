@@ -16,7 +16,7 @@ microsoft:
   use_playwright_fallback: true
 
 groq:
-  api_key: "<YOUR_GROQ_API_KEY>"
+  api_key: "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"
   primary_model: "llama-3.3-70b-versatile"
   coding_model: "deepseek-r1-distill-llama-70b"
   vision_model: "llava-v1.5-7b"
